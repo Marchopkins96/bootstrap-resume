@@ -4,6 +4,10 @@ header {
     margin: 0;
 }
 
+.bg-color-name-title {
+    background-color: #676767;
+}
+
 .logo {
     background: url("../images/rosie.jpg");
     background-position: center;
