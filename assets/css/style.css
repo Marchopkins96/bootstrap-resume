@@ -28,6 +28,10 @@
     color: #fafafa;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /*--------------------------------------------Special paddings/Margins/Text*/
 
 h1,
