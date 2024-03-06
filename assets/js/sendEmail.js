@@ -1,9 +1,10 @@
-function sendMail(contactForm) {
-    emailjs.send("gmail", "rosie", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
+function sendMail() {
+    let tempParams = {
+        to_name: document.getElementById("fullname").value,
+        from_name: document.getElementById("emailaddress").value,
+        message: document.getElementById("projectsummary").value
+    };
+    emailjs.send('service_xd1nphv', 'template_qshx18e', tempParams)
     .then(
         function(response) {
             console.log("SUCCESS", response);
